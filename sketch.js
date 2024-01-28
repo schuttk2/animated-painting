@@ -2,6 +2,7 @@ let r, g, s;
 
 function setup() {
    createCanvas(600, 600);
+
  }
  
  function draw() {
@@ -9,7 +10,7 @@ function setup() {
   r = map(mouseX, 0, windowWidth, 225, 0);
   g = map(mouseX, windowWidth, 0, 130, 0);
   s = map(mouseY, 0, windowHeight, 80, 150);
-  strokeWeight(3);
+  strokeWeight(1);
   //red triangle
    fill(178-r, 30 -g, 10);
    quad(width-(s/5), 0+(s/5), width-(s/5), height-(s/5), 500+(s/5), height-(s/5), 220+(s/5), 375-(s/5));
